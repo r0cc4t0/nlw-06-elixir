@@ -9,4 +9,10 @@ defmodule WabanexWeb.Schemas.Types.User do
     field :name, non_null(:string)
     field :email, non_null(:string)
   end
+
+  input_object :create_user_input do
+    field :name, non_null(:string), description: "Username"
+    field :email, non_null(:string), description: "User Email"
+    field :password, non_null(:string), description: "User Password"
+  end
 end

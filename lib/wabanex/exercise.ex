@@ -9,7 +9,7 @@ defmodule Wabanex.Exercise do
 
   @foreign_key_type :binary_id
 
-  @fields [:name, :youtube_video_url, :protocol_description, :repetitions, :training_id]
+  @fields [:name, :youtube_video_url, :protocol_description, :repetitions]
 
   schema "exercises" do
     field :name, :string
